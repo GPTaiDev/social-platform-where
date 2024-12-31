@@ -1,0 +1,39 @@
+/* Base styles */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --text-color: #212529;
+    --light-theme-background: #ffffff;
+    --dark-theme-background: #343a40;
+    --light-theme-text: #212529;
+    --dark-theme-text: #ffffff;
+}
+
+/* Dark/Light theme support */
+[data-theme="dark"] {
+    --background-color: var(--dark-theme-background);
+    --text-color: var(--dark-theme-text);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    /* Adjustments for mobile devices */
+}
+
+/* Grid and Flexbox for layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Animations and transitions */
+.fade-in {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
